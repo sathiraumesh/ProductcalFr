@@ -105,7 +105,7 @@ export default {
 
         setSelected(value) {
 
-            axios.get(`http://localhost:5000/api/product/price/${value}`)
+            axios.get(`product/price/${value}`)
                 .then(response => {
                     this.products = response.data
 

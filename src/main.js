@@ -5,6 +5,9 @@ import { BootstrapVue} from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Toasted from 'vue-toasted';
+import axios from 'axios'
+
+axios.defaults.baseURL = "http://localhost:5000/api"
  
 Vue.use(Toasted)
 

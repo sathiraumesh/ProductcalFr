@@ -125,7 +125,7 @@ export default {
 
     methods: {
         getProductList() {
-            axios.get("http://localhost:5000/api/product")
+            axios.get("product")
                 .then(response => {
                     this.products = response.data;
 
@@ -147,7 +147,7 @@ export default {
         },
 
         getPriceOfOrder(order) {
-            axios.post("http://localhost:5000/api/product/price", order)
+            axios.post("product/price", order)
                 .then(response => {
                     this.price = response.data;
 
