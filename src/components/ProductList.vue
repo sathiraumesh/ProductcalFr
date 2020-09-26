@@ -112,7 +112,7 @@ export default {
                 })
                 .catch(err => {
                     if (err) {
-                        this.$toasted.show('Error Loading');
+                        this.$toasted.show('Error Loading', this.toastOptions);
                     }
 
                 })
@@ -133,7 +133,11 @@ export default {
         return {
             selected: 1,
             units: [],
-            products: []
+            products: [],
+            toastOptions: {
+                type: 'error',
+                duration: 1000
+            },
         }
     },
 
